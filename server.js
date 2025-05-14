@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(
   cors({
-    origin: "https://rnd-client.vercel.app/", // Your frontend URL
+    origin: "*", // Allow all origins
     methods: ["GET", "POST", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
